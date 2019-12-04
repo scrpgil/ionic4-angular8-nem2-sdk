@@ -18,6 +18,7 @@ export class HomePage {
         );
         accountHttp.getAccountInfo(address).subscribe(x => {
             this.accountInfo = JSON.stringify(x, null, '\t');
+          console.log(this.accountInfo);
         });
     }
 }
